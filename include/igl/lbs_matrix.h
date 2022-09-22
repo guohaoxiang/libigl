@@ -23,7 +23,7 @@ namespace igl
   //
   // Inputs:
   //   V  #V by dim list of rest positions
-  //   W  #V+ by #T  list of weights
+  //   W  #V by #T  list of weights
   // Outputs:
   //   M  #V by #T*(dim+1)
   //
@@ -42,7 +42,7 @@ namespace igl
   //
   // Inputs:
   //   V  #V by dim list of vertex rest positions
-  //   W  #V by #handles list of correspondence weights
+  //   W  #V by #handles (previously mentioned as #T) list of correspondence weights
   // Output:
   //   M  #V * dim by #handles * dim * (dim+1) matrix such that
   //     new_V(:) = LBS(V,W,A) = reshape(M * A,size(V)), where A is a column
